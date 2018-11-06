@@ -1,0 +1,26 @@
+{
+  "name": "proxy-purchase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Merry-Men/proxy-purchase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Merry-Men/proxy-purchase/issues"
+  },
+  "homepage": "https://github.com/The-Merry-Men/proxy-purchase#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-aws-s3": "^2.0.0"
+  }
+}
