@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js",
+    "serviceStart": "node ../related-stocks/server/index.js & node ../service-purchase/server.js & node ../stock-value-chart/server/index.js & ../52-week-high/node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,22 @@
   },
   "homepage": "https://github.com/The-Merry-Men/proxy-purchase#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "bluebird": "^3.5.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "grunt": "^1.0.3",
-    "grunt-aws-s3": "^2.0.0"
+    "grunt-aws-s3": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "nodemon": "^1.18.6"
   }
 }
